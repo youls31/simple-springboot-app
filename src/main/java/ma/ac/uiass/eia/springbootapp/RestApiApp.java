@@ -13,8 +13,6 @@ public class RestApiApp implements CommandLineRunner{
 	@Autowired 
 	private  BusinessService service;
 	
-	@Autowired
-	private CustomProperties props;
 	
 	public static void main(String[] args) {
 		SpringApplication.run(RestApiApp.class, args);
@@ -23,7 +21,7 @@ public class RestApiApp implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		//service.afficherDate();;
+		service.afficherDate();;
 		
 	}
   
