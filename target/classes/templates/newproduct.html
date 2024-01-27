@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="www.thymeleaf.org">
+<head>
+<link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div class="container">
+
+
+  <div class="row">
+    <div class="col-md-12 col-sm-offset-2">
+      <h4>New Product</h4>
+      <form  action="addProduct" method="post">
+        <div class="form-group">
+          <!--<label class="font-weight-bold" for="designation">Désignation</label> -->
+          <input type="text" id="name"
+                 class="form-control" name="name"  placeholder="title">
+        </div>
+     
+        <div class="form-group">
+          <!-- <label class="font-weight-bold" for="price">Prix</label> -->
+          <input type="text" id="price"
+                 class="form-control" name="price"  placeholder="Prix">
+        </div>
+        <div class="form-group">
+          <!--  <label class="font-weight-bold" for ="description">Description</label> -->
+          <textarea id="description"
+                    class="form-control" name="description"  required placeholder="Description">
+            </textarea>
+        </div>
+           
+
+        <button class="btn btn-success" type="submit">Enregistrer</button>
+      </form>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
